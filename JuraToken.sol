@@ -539,10 +539,10 @@ contract ERC20Pausable is ERC20, Pausable {
 }
 
 contract JuraToken is ERC20Burnable, ERC20Mintable, ERC20Pausable {
-  string public name = "JuraToken";
-  string public symbol = "JURA";
+  string public name = "Jurasaur";
+  string public symbol = "JREX";
   uint public decimals = 8;
-  uint256 public initialSupply = 6 * (10 ** 9);
+  uint256 public initialSupply = 10 * (10 ** 9);
 
   constructor() public {
     mint(msg.sender, initialSupply * (10 ** uint256(decimals)));
